@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Inverter Store</title>
+    <meta name="description" content="Explore solar inverters, prices and technical specifications.">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="logo" href="/">☀ Solar<span>Inverters</span></a>
+        <span class="status"><span class="dot"></span> Product Catalogue</span>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">SOLAR POWER CATALOGUE</p>
+            <h1>Find the right <span>solar inverter.</span></h1>
+            <p class="subtitle">Explore models, compare prices and check technical specifications.</p>
+
+            <div class="search-panel">
+                <input id="searchInput" type="search"
+                       placeholder="Search model, brand or product..." aria-label="Search inverters">
+                <select id="brandFilter" aria-label="Filter by brand">
+                    <option value="">All brands</option>
+                </select>
+                <button id="searchButton">Search</button>
+            </div>
+        </section>
+
+        <section class="catalogue">
+            <div class="catalogue-heading">
+                <div>
+                    <h2>Our Inverters</h2>
+                    <p id="resultCount">Loading products...</p>
+                </div>
+                <span class="database-label">Live database</span>
+            </div>
+
+            <div id="productGrid" class="product-grid">
+                <p class="message">Loading inverter products...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Solar Inverter Catalogue · Product details sourced from the collected dataset.</p>
+    </footer>
+
+    <dialog id="detailsDialog" class="details-dialog">
+        <button id="closeDialog" class="close-button" aria-label="Close details">✕</button>
+        <div id="detailsContent"></div>
+    </dialog>
+</body>
+</html>
